@@ -1,0 +1,243 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Barlow", sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: auto;
+  /* max-width: 375px; */
+
+  /* height: 100vh; */
+  /* if viewport height is commented the space will show. */
+}
+.header {
+  width: 375px;
+  position: relative;
+  overflow: hidden;
+}
+img {
+  max-width: 100%;
+  /* cursor: pointer; */
+  background-attachment: fixed;
+  /* height: auto; */
+}
+.navbar__container {
+  width: 95%;
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.navbar__logo {
+  font-size: 18px;
+  color: #fff;
+}
+.navbar__menu {
+  display: block;
+  margin-right: 10px;
+}
+.bar-1,
+.bar-2,
+.bar-3 {
+  width: 30px;
+  height: 2px;
+  margin: 6px 0;
+  background-color: #fff;
+}
+.motto {
+  color: #fff;
+  position: absolute;
+  top: 140px;
+  left: 40px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+.desktop-menu {
+  display: none;
+}
+/* .motto span {
+  border: 2px solid red;
+  padding-right: 40px;
+  display: block;
+  width: 375px;
+  overflow: visible;
+  justify-content: center;
+} */
+.transform {
+  /* height: 600px; */
+  text-align: center;
+}
+.transform-body {
+  border: 2px solid blue;
+  text-align: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.tra-para {
+  border: 2px solid red;
+}
+.photograghy {
+  border: 2px solid red;
+  width: 100%;
+}
+/* 
+.thomas-img {
+  border-radius: 50%;
+  width: 270px;
+  position: absolute;
+  left: 40px;
+  size: 20px; */
+/* justify-content: center; */
+/* display: block; */
+/* align-items: center; */
+/* padding-left: 40px; */
+
+.emily {
+  width: 100%;
+  height: 550px;
+  border: 2px solid red;
+  position: relative;
+}
+.emily-body {
+  /* border: 2px solid blue; */
+  position: absolute;
+  top: 58%;
+}
+.emily-img {
+  /* border: 2px solid red; */
+  border-radius: 50%;
+  /* width: 270px; */
+  height: auto;
+  position: absolute;
+  left: 105px;
+  top: 95px;
+  size: 20px;
+}
+.thomas {
+  width: 100%;
+  height: 550px;
+  border: 2px solid blue;
+  position: relative;
+}
+.thomas-body {
+  /* border: 2px solid red; */
+  position: absolute;
+  top: 48%;
+}
+.thomas-img {
+  /* border: 2px solid blue; */
+  border-radius: 50%;
+  /* width: 270px; */
+  height: auto;
+  position: absolute;
+
+  left: 105px;
+  top: 95px;
+  size: 20px;
+}
+.jennie {
+  width: 100%;
+  height: 550px;
+  border: 2px solid green;
+  position: relative;
+}
+.jennie-body {
+  /* border: 2px solid blue; */
+  position: absolute;
+  top: 48%;
+}
+.jennie-img {
+  border-radius: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  /* border: 2px solid green; */
+}
+.img-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-rows: repeat(2, 1fr); */
+  height: 376px;
+  /* border: 2px solid red; */
+}
+.bottle {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  overflow-x: hidden;
+}
+.orange {
+  grid-column: 2/3;
+  overflow: hidden;
+  grid-row: 1/2;
+}
+.cone {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  overflow: hidden;
+}
+.sugar {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  overflow: hidden;
+}
+footer {
+  border: 2px solid blue;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  background-color: hsl(168, 62%, 41%);
+}
+.footer__logo {
+  justify-items: center;
+  text-align: center;
+  color: hsl(167, 40%, 24%);
+}
+.footer__menu {
+  list-style: none;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 20px;
+}
+.footer__link {
+  display: flex;
+  color: hsl(167, 40%, 24%);
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.footer__link:hover {
+  color: #fff;
+}
+.footer__icons {
+  padding: 0px 15px;
+  margin: 20px;
+}
+.footer__icons:hover {
+  color: #fff;
+}
+.facebook-icon:hover,
+.instagram-icon:hover,
+.pinterest-icon:hover,
+.twitter-icon:hover {
+  /* color: #fff; */
+  /* border: 2px solid red; */
+  background-color: #fff;
+}
+span {
+  padding: 0px 10px;
+}
+.footer__icons a:hover {
+  color: white;
+}
+
+@media only screen and(min-width: 1024px) {
+  .wrapper {
+    background-color: red;
+  }
+}
