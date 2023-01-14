@@ -6,120 +6,165 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sunny-project-2</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap" rel="stylesheet">
 </head>
     <body class="wrapper">
             <header class="header">
-                <img src="mobile/image-header.jpg" alt="header-img">
-                <h1 class="motto">we are <span>creatives</span></h1 >
+                <div class="header-img">
+                    <img  src="mobile/image-header.jpg" class="mobile">
+                    <img  src="desktop/image-header.jpg" class="desktop"> 
+                </div>
+                
+                    <h1 id="motto">we are creatives</h1>
+                
+                <span><i><img id="arrow"src="icon-arrow-down.svg" class="mobile"></i></span>
+                <span><i><img id="arrow"src="desktop/icon-arrow-down.svg" class="desktop"></i></span>
                 <div class="navbar__container">
-                    <h1 class="navbar__logo">sunnyside</h1>
-                    <div class="navbar__menu" id="mobile-menu">
+                    <h1 id="navbar__logo" class="mobile">sunnyside</h1>
+                    <h1 id="navbar__logo" class="desktop">sunnyside</h1>
+                    <div id="mobile__menu" class="mobile">
                         <div class="bar-1"></div>
                         <div class="bar-2"></div>
                         <div class="bar-3"></div>
-                    </di>
-                    <span class="desktop-menu" id="mobile-tooltip">
-                        <ul class="navbar__menu-1">
+                    </div>
+                    <div id="desktop-menu" class="desktop">
+                        <ul class="navbar__menu">
                             <li class="navbar__item">
-                                <a class="navbar__link">About</a>
+                                <a href="/" class="navbar__link">About</a>
                             </li>   
-                        </ul>
-                        <ul class="navbar__menu-1">
+                        
                             <li class="navbar__item">
-                                <a class="navbar__link">Services</a>
+                                <a href="/" class="navbar__link">Services</a>
                             </li>   
-                        </ul>
-                        <ul class="navbar__menu-1">
                             <li class="navbar__item">
-                                <a class="navbar__link">Projects</a>
-                            </li>   
-                        </ul>
-                    </span>
+                                <a href="/" class="navbar__link">Projects</a>
+                            </li>
+                        </ul>        
+                        <button><a href="/" class="btn">contact</a></button>     
+                    </div>
                 </div>
             </header>
-            <section>
-                <div class="transform">
-                    <img src="mobile/image-transform.jpg">
-                </div>
-                <div class="transform-body">
-                    <h1>Transform your brand</h1>
-                    <p>We are a full-services creative agency specializing in help brands grow fast.Engage your clients through compelling visuals that do most of the marketing for you.<span>LEARN MORE</span></p>
-                    
-                </div>
-                <div>
-                    <img src="mobile/image-stand-out.jpg">
-                </div>
-                <div>
-                    <h1>Stand out to the right audience</h1>
-                    <p class="tra-para">Using a collaborative formula of designers, researchers,and copywriters,we'll build and extend your brand in digital places.<span>LEARN MORE</span></p>
-                </div>
-                <div>
-                    <img src="mobile/image-gallery-orange.jpg">
-                </div>
-                <div class="photography">
-                    <img src="mobile/image-photography.jpg">
-                </div>
-                
-                    <div class="emily">
-                        <h2>clients testimonials</h2>
-                        <img src="image-emily.jpg" class="emily-img">
-                        <div class="emily-body">
-                            <p class="para-emily">We put our trust in synnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
-                            <!-- <h2>Emily R.</h2>
-                            <h4>Marketing Director</h4> -->
-                        </div>
-                        
+            <section class="major-section">
+                <div class="transform-sect">
+                    <div class="transform-img">
+                        <img src="mobile/image-transform.jpg" class="mobile">
+                        <img src="desktop/image-transform.jpg" class="desktop">
                     </div>
-                    <div class="thomas">
-                        <img src="image-thomas.jpg" class="thomas-img">
-                        <p class="thomas-body">Sunnyside's enthusiasm coupled with their keen interest in our brand's success made it satisfying and enjoyable experience.</p>
-                        <!-- <h2>Thomas S.</h2>
-                        <h4>Chief Operating Officer</h4> -->
+                    <div class="transform-body">
+                         <div class="transform-text">
+                        <h1>Transform your brand</h1>
+                        <p>We are a full-services creative agency specializing in help brands grow fast.Engage your clients through compelling visuals that do most of the marketing for you.</p>
+                        <h4>LEARN MORE</h4>
+                         </div>
                     </div>
-                    <div class="jennie">
-                        <img src="image-jennie.jpg" class="jennie-img">
-                        <div class="jennie-body">
-                            <p class="para-jennie">Incredible end result! Our sales increased over 400% when we worked with sunnyside.Highly recommended! </p>
-                            <!-- <h2>Jeennie F.</h2>
-                            <h4>Business Owner</h4> -->
+                </div>
+                <div class="stand-out">
+                    <div class="stand-out-img">
+                        <img id=""src="mobile/image-stand-out.jpg" class="mobile">
+                        <img src="desktop/image-stand-out.jpg" class="desktop">
+                    </div>
+                    <div class="stand-out-body">
+                        <div class="stand-out-text">
+                            <h1>Stand out to the right audience</h1>
+                            <p>Using a collaborative formula of designers, researchers,and copywriters,we'll build and extend your brand in digital places.</p>
+                            <h4>LEARN MORE</h4>
                         </div>
                     </div>
+                </div>
+            </section> 
+            <section>  
+                <div class="graphic-design">
+                    <div class="graphic-img">
+                        <img src="mobile/image-graphic-design.jpg" class="mobile">
+                     <img src="desktop/image-graphic-design.jpg" class="desktop"> 
+                        <div class="graphic-text">
+                            <h1>graphic design</h1>
+                            <p>Great design makes you memorable.We deliver artwork that underscores your brand messages potential clients' attention.</p>
+                        </div>
+                    </div>
+                    <div class="photography-img">
+                        <img src="mobile/image-photography.jpg" class="mobile">
+                        <img src="desktop/image-photography.jpg" class="desktop"> 
+                        <div class="photography-text">
+                            <h1>Photography</h1>
+                            <p>Increase your credibility by getting the most stunning, high-quality photos that  improve your business image. </p>
+                        </div>
+                    </div>
+                </div>
+            </section> 
+            <div class="testimony"><h1>clients testimonials</h1></div>
+            <section class="client">
+                <div class="emily"> 
+                    <img id="emily-img" src="image-emily.jpg" class="mobile">
+                     <img id="emily-img" src="desktop/image-emily.jpg" class="desktop"> 
+                    <div  id="emily-body" >
+                        <p>We put our trust in synnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+                        <h2>Emily R.</h2>
+                        <h4>Marketing Director</h4> 
+                    </div>
+                </div>
+                <div class="thomas">
+                    <img id="thomas-img"src="image-thomas.jpg" class="mobile">
+                    <img id="thomas-img"src="desktop/image-thomas.jpg" class="desktop">
+                    <div id="thomas-body">
+                        <p>Sunnyside's enthusiasm coupled with their keen interest in our brand's success made it satisfying and enjoyable experience.</p>
+                        <h2>Thomas S.</h2>
+                        <h4>Chief Operating Officer</h4>
+                    </div>
+                </div>
+                <div class="jennie">
+                    <img id="jennie-img"src="image-jennie.jpg" class="mobile">
+                    <img id="jennie-img"src="desktop/image-jennie.jpg" class="desktop">
+                    <div id="jennie-body">
+                        <p>Incredible end result! Our sales increased over 400% when we worked with sunnyside.Highly recommended! </p>
+                        <h2>Jennie F.</h2>
+                        <h4>Business Owner</h4> 
+                    </div>
+                </div>
+            </section>    
                 <div class="img-gallery">
-                        <div class="bottles">
-                            <img src="mobile/image-gallery-milkbottles.jpg">
-                        </div>
-                        <div class="orange">
-                            <img src="mobile/image-gallery-orange.jpg">
-                        </div>
-                        <div class="cone">
-                            <img src="mobile/image-gallery-cone.jpg">
-                        </div>
-                        <div class="sugar">
-                            <img src="mobile/image-gallery-sugar-cubes.jpg">
+                    <div class="bottles">
+                        <img id="bottles-img" src="mobile/image-gallery-milkbottles.jpg" class="mobile">
+                        <img id="bottles-img" src="desktop/image-gallery-milkbottles.jpg" class="desktop">
+                    </div>
+                    <div class="orange">
+                        <img id="orange-img" src="mobile/image-gallery-orange.jpg" class="mobile">
+                        <img id="orange-img" src="desktop/image-gallery-orange.jpg" class="desktop">
+                    </div>
+                    <div class="cone">
+                        <img id="cone-img" src="mobile/image-gallery-cone.jpg" class="mobile">
+                        <img id="cone-img"src="desktop/image-gallery-cone.jpg" class="desktop">
+                    </div>
+                    <div class="sugar">
+                        <img id="sugar-img" src="mobile/image-gallery-sugar-cubes.jpg" class="mobile">
+                        <img id="sugar-img" src="desktop/image-gallery-sugarcubes.jpg" class="desktop">
                     </div>
                 </div> 
             </section>
             <footer>
-                <div><h1 class="footer__logo">sunnyside</h1></div>
-        <ul class="footer__menu">
-          <li class="footer__items">
-            <a href="/" class="footer__link">About</a>
-          </li>
-          <li class="footer__items">
-            <a href="/" class="footer__link">Services</a>
-          </li>
-          <li class="footer__items">
-            <a href="/" class="footer__link">Projects</a>
-          </li>
-        </ul>
-      <div class="footer__icons">
-        <span><i><a href="/"><img src="icon-facebook.svg" class="facebook-icon"></a></span>
-        <span><i><a href="/"><img src="icon-instagram.svg" class="instagram-icon"></a></i></span>
-        <span><i><a href="/"><img src="icon-twitter.svg" class="twitter-icon"></a></i></span>
-        <span><i><a href="/"><img src="icon-pinterest.svg" class="pinterest-icon"></a></i></span>
-      </div>
-             </footer> 
+                <h1 class="footer__logo">sunnyside</h1>
+                <ul class="footer__menu">
+                    <li class="footer__items">
+                        <a  class="footer__link">About</a>
+                    </li>
+                    <li class="footer__items">
+                        <a  class="footer__link">Services</a>
+                    </li>
+                    <li class="footer__items">
+                        <a  class="footer__link">Projects</a>
+                    </li>
+                </ul>
+                <div id="footer__icons">
+                    <span><i><a><img id="facebook-icon" src="icon-facebook.svg" class="mobile"></a></span>
+                    <span><i><a><img id="facebook-icon" src="desktop/icon-facebook.svg" class="desktop"></a></span>
+                    <span><i><a><img id="instagram-icon" src="icon-instagram.svg" class="mobile"></a></i></span>
+                    <span><i><a><img id="instagram-icon" src="desktop/icon-instagram.svg" class="desktop"></a></i></span>
+                    <span><i><a><img id="twitter-icon" src="icon-twitter.svg" class="mobile"></a></i></span>
+                    <span><i><a><img id="twitter-icon" src="desktop/icon-twitter.svg" class="desktop"></a></i></span>
+                    <span><i><a><img id="pinterest-icon" src="icon-pinterest.svg" class="mobile"></a></i></span>
+                    <span><i><a><img id="pinterest-icon" src="desktop/icon-pinterest.svg" class="desktop"></a></i></span>
+                </div>
+        </footer> 
         
     </body>
 </html>
