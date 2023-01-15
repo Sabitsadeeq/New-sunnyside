@@ -1,46 +1,50 @@
-body {
-font-family: "Barlow", sans-serif;
-}
+
 @media (max-width: 375px) {
   * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    scroll-behavior: auto;
-    max-width: 375px;
-
+    max-width:375px ;
   }
   .wrapper{
     width:100%;
-    overflow-x: hidden;
+    overflow: hidden;
+    height:auto;
+    font-family: "Barlow", sans-serif;
+  }
+  img{
+    width:100%;
     height:auto;
   }
    .desktop{
      display: none;
   }
   .header {
-    position: relative;
-    line-height: 0%;
-    overflow: hidden;
+    position:relative;
+    overflow-x: hidden;
     align-items: center;
+    height: 538px;
+    max-width:375px;
+    background-color: green;
   }
   .header-img {
     width: 375px;
+    display:none;
   }
   .header .mobile{
     display: block;
   }
-   .navbar__container { 
+   /* .navbar__container { 
     width: 375px;
-    height: 45px;
+    height: 350px;
     position: absolute;
-    top: 5px;
+    top: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
-  }
+  } */
   #navbar__logo {
     font-size: 24px;
     font-weight: 800;
@@ -50,37 +54,89 @@ font-family: "Barlow", sans-serif;
     position:absolute;
     top:5px;
     left:15px;
-    padding-top: 15px;
-  }
-  button a#navbar__link{
+    padding-top: px;
+   } 
+  /* button a#navbar__link{
    display:none;
-  }
+  } */
   #mobile__menu {
     display: block;
     margin-right: 10px;
-    position:absolute;
+    /* position:relative; */
+    /* top:0; */
     left:320px;
     height: 45px;
-    padding-top: 5px;
-
+    padding-top: 10px;
+    cursor: pointer;
   }
-  button{
-    display:none;
-  }
-  .bar-1,
-  .bar-2,
-  .bar-3 {
+  .bar {
     width: 35px;
     height: 2px;
     margin: 6px 0;
     background-color: #fff;
+    /* position: relative; */
   }
+  .dropdown-bar{
+    position:relative;
+    cursor: pointer;
+  }
+  .dropdown-bar:hover{
+    background-color: #000;
+  }
+  /* #mobile-menu #dropdown-cont {
+    position: absolute;
+    display:none;
+    top:50px;
+    right:10px;
+    width: 370px;
+    height:15px ;
+    color:#fff;
+    background-color:black;
+    z-index: 1;
+    cursor: pointer;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    overflow: auto;
+  
+  }  */
+
+  #dropdown-cont  a {
+    position:absolute;
+    display:table;
+    top:5px;
+    right:-40px;
+    color:#fff;
+    display:block;
+    width:375px;
+    height:300px;
+    text-decoration: none;
+    visibility: visible;
+    opacity:1;
+  }
+  /* .dropdown-bar:hover #dropdown-cont a{
+    display: table;
+    color: #fff;
+  } */
+  #mobile__menu #dropdown-cont{
+    position:absolute;
+    display: flex;
+    top:40px;
+    right: -10px;
+    visibility: visible;
+    opacity:1;
+    width:350px;
+    height: 300px;
+    z-index: 1;
+   } 
+  button{
+    /* display:none; */
+  }
+  
   #motto {
     position: absolute;
     top: 38%;
     left:25%;
     height:380px;
-    color:#fff;
+    color:#000;
 
   }
   #arrow {
@@ -315,7 +371,7 @@ font-family: "Barlow", sans-serif;
   .wrapper {
     max-width: 1440px;
     height:auto;
-    
+    /* overflow:wrap; */
   }
   .mobile {
     display: none;
@@ -358,8 +414,9 @@ font-family: "Barlow", sans-serif;
   }
   .navbar__menu{
     display:flex;
+    /* padding-top: 25px; */
   }
-  .navbar__item{
+  .navbar__menu .navbar__item{
     display:flex;
     list-style:none;
     padding-left:25px;
@@ -369,12 +426,12 @@ font-family: "Barlow", sans-serif;
   }
   .navbar__link{
     display:flex;
-    color:#fff;
+    /* color:#fff; */
     align-content: center;
     justify-content: center;
     text-decoration: none;
     list-style: none;
-    padding-top: 25px;
+    /* padding-top: 25px; */
   }
   .navbar__item button{
    list-style: none;
@@ -516,8 +573,8 @@ font-family: "Barlow", sans-serif;
     display: flex;
     text-align: center;
     justify-content: space-between;
-    padding: 150px;
-    margin: 130px;
+    padding: 100px;
+    margin: 90px;
   }
   .emily {
     width: 280px;
