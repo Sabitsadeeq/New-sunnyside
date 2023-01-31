@@ -1,40 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+<head
+    <meta charset= "UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sunny-project-2</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+    <link rel="stylesheet" type="text/css" href="style1.css">
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;400;700;800&display=swap" rel="stylesheet">
 </head>
     <body class="wrapper">
             <header class="header">
                 <div class="header-img">
-                    <img  src="mobile/image-header.jpg" class="mobile">
-                    <img  src="desktop/image-header.jpg" class="desktop"> 
                 </div>
-                
-                    <!-- <h1 id="motto">we are creatives</h1> -->
-                
-                <span><i><img id="arrow"src="icon-arrow-down.svg" class="mobile"></i></span>
-                <span><i><img id="arrow"src="desktop/icon-arrow-down.svg" class="desktop"></i></span>
-                
-                    <h1 id="navbar__logo">sunnyside</h1>
-                    <!-- <h1 id="navbar__logo" class="desktop">sunnyside</h1> -->
-                    <div id="mobile__menu" class="mobile">
-                        <div class="dropdown-bar">
-                            <div class="bar"></div>
-                            <div class="bar"></div>
-                            <div class="bar"></div>
-                        </div>
-                        <div id="dropdown-cont">
-                            <a href="#">About</a>
-                            <a href="#">Services</a>
-                            <a href="#">Projects</a>
-                        </div>
-                    </div>
-                    <div id="desktop-menu" class="desktop">
+                    <h1 id="motto">we are</h1>
+                    <h1><span class="cre">creatives</span></h1>
+                <span ><i><img id="arrow"src="icon-arrow-down.svg"></i></span>
+                <div class="navbar">
+                    <h1 id="navbar__logo">sunnyside</h1> 
                         <ul class="navbar__menu">
                             <li class="navbar__item">
                                 <a href="/" class="navbar__link">About</a>
@@ -46,10 +32,21 @@
                             <li class="navbar__item">
                                 <a href="/" class="navbar__link">Projects</a>
                             </li>
+                               
+                         <button><a href="/" class="btn">contact</a></button>
                         </ul>        
-                         <button><a href="/" class="btn">contact</a></button>      
-                    </div>
-            
+                </div>
+                <div class="dropdown">
+                    <div id="bar"></div>
+                    <div id="bar"></div>
+                    <div id="bar"></div>
+                </div>
+                <div class="test">
+                    <a class="link" href="#">About</a>
+                    <a class="link" href="#">Services</a>
+                    <a class="link" href="#">Projects</a>
+                    <button class="btn1">contact</button>
+                </div> 
             </header>
             <section class="major-section">
                 <div class="transform-sect">
@@ -58,11 +55,11 @@
                         <img src="desktop/image-transform.jpg" class="desktop">
                     </div>
                     <div class="transform-body">
-                         <div class="transform-text">
-                        <h1>Transform your brand</h1>
-                        <p>We are a full-services creative agency specializing in help brands grow fast.Engage your clients through compelling visuals that do most of the marketing for you.</p>
-                        <h4>LEARN MORE</h4>
-                         </div>
+                        <div class="text">
+                            <h1>Transform your brand</h1>
+                            <p>We are a full-services creative agency specializing in help brands grow fast.Engage your clients through compelling visuals that do most of the marketing for you.</p>
+                            <h4>LEARN MORE</h4>
+                        </div>
                     </div>
                 </div>
                 <div class="stand-out">
@@ -71,7 +68,7 @@
                         <img src="desktop/image-stand-out.jpg" class="desktop">
                     </div>
                     <div class="stand-out-body">
-                        <div class="stand-out-text">
+                        <div class="text">
                             <h1>Stand out to the right audience</h1>
                             <p>Using a collaborative formula of designers, researchers,and copywriters,we'll build and extend your brand in digital places.</p>
                             <h4>LEARN MORE</h4>
@@ -92,10 +89,10 @@
                     <div class="photography-img">
                         <img src="mobile/image-photography.jpg" class="mobile">
                         <img src="desktop/image-photography.jpg" class="desktop"> 
-                        <div class="photography-text">
+                         <div class="photography-text">
                             <h1>Photography</h1>
                             <p>Increase your credibility by getting the most stunning, high-quality photos that  improve your business image. </p>
-                        </div>
+                        </div> 
                     </div>
                 </div>
             </section> 
@@ -162,15 +159,17 @@
                     </li>
                 </ul>
                 <div id="footer__icons">
-                    <span><i><a><img id="facebook-icon" src="icon-facebook.svg" class="mobile"></a></span>
-                    <span><i><a><img id="facebook-icon" src="desktop/icon-facebook.svg" class="desktop"></a></span>
-                    <span><i><a><img id="instagram-icon" src="icon-instagram.svg" class="mobile"></a></i></span>
-                    <span><i><a><img id="instagram-icon" src="desktop/icon-instagram.svg" class="desktop"></a></i></span>
-                    <span><i><a><img id="twitter-icon" src="icon-twitter.svg" class="mobile"></a></i></span>
-                    <span><i><a><img id="twitter-icon" src="desktop/icon-twitter.svg" class="desktop"></a></i></span>
-                    <span><i><a><img id="pinterest-icon" src="icon-pinterest.svg" class="mobile"></a></i></span>
-                    <span><i><a><img id="pinterest-icon" src="desktop/icon-pinterest.svg" class="desktop"></a></i></span>
+                    <span><a><img id="facebook-icon" src="icon-facebook.svg" class="mobile"></a></span>
+                    <span><a><img id="facebook-icon" src="desktop/icon-facebook.svg" class="desktop"></a></span>
+                    <span><a><img id="instagram-icon" src="icon-instagram.svg" class="mobile"></a></span>
+                    <span><a><img id="instagram-icon" src="desktop/icon-instagram.svg" class="desktop"></a></span>
+                    <span><a><img id="twitter-icon" src="icon-twitter.svg" class="mobile"></a></span>
+                    <span><a><img id="twitter-icon" src="desktop/icon-twitter.svg" class="desktop"></a></span>
+                    <span><a><img id="pinterest-icon" src="icon-pinterest.svg" class="mobile"></a></span>
+                    <span><a><img id="pinterest-icon" src="desktop/icon-pinterest.svg" class="desktop"></a></span>
                 </div>
-        </footer> 
+        </footer>
+        <script src="app1.js">      
+        </script> 
     </body>
 </html>

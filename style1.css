@@ -1,0 +1,592 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+body {
+  font-family: "Barlow", sans-serif;
+  font-family: "Kumbh Sans", sans-serif;
+}
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+  height: auto;
+  font-family: "Barlow", sans-serif;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+.desktop {
+  display: none;
+}
+.header {
+  height: 538px;
+  background-image: url(../mobile/image-header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.navbar {
+  justify-content: space-between;
+  height: 50px;
+}
+#navbar__logo {
+  font-size: 24px;
+  font-weight: 800;
+  height: 45px;
+  color: #fff;
+  padding: 10px;
+}
+#mobileMenu {
+  border: 2px solid white;
+  width: 10%;
+  right: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.navbar__menu {
+  display: none;
+}
+.btn {
+  display: none;
+}
+.dropdown {
+  position: absolute;
+  display: inline-block;
+  padding: 8px;
+  right: 10px;
+  top: 8px;
+}
+#bar {
+  width: 30px;
+  height: 2px;
+  margin: 5px;
+  background-color: #fff;
+  cursor: pointer;
+}
+.test {
+  position: absolute;
+  top: 60px;
+  width: 100%;
+  left: 2%;
+  border-radius: 2px;
+  max-width: 92%;
+  margin: 40px 10px 10px 10px;
+  background-color: #fff;
+  height: 376px;
+  display: none;
+}
+.active {
+  display: block;
+}
+.link {
+  display: block;
+  margin: 28px 0;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  padding: 15px;
+  color: gray;
+  font-size: 12px;
+}
+a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+}
+.btn1 {
+  display: flex;
+  border-radius: 80px;
+  width: 150px;
+  padding: 8px;
+  border: none;
+  background-color: hsl(51, 100%, 49%);
+  margin: 0px auto;
+  justify-content: center;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.desktop__motto {
+  display: none;
+}
+#motto {
+  position: absolute;
+  top: 20%;
+  left: 24%;
+  height: auto;
+  color: #fff;
+  font-size: 48px;
+  letter-spacing: 0.2rem;
+}
+.cre {
+  position: absolute;
+  left: 7%;
+  top: 30%;
+  font-size: 48px;
+  color: #fff;
+  letter-spacing: 0.5rem;
+}
+#arrow {
+  position: absolute;
+  top: 278px;
+  width: 40px;
+  left: 45%;
+}
+.desktop-menu {
+  display: none;
+}
+.transform-body {
+  text-align: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 320px;
+  padding: 14px;
+  position: relative;
+}
+.stand-out-body {
+  height: 320px;
+  text-align: center;
+  justify-content: center;
+  padding: 14px;
+  position: relative;
+}
+.text {
+  text-align: center;
+  display: block;
+  position: absolute;
+  top: 20%;
+  padding: 5px;
+}
+.text p {
+  padding: 15px 0px;
+}
+.transform-img,
+.stand-out-img {
+  line-height: 0%;
+}
+.graphic-design {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+.graphic-img {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  height: 100%;
+  position: relative;
+}
+.graphic-text {
+  position: absolute;
+  bottom: 10%;
+  text-align: center;
+  justify-content: center;
+  padding: 14px;
+}
+.photography-img {
+  grid-row: 2/3;
+  height: 100%;
+  position: relative;
+}
+.photography-text {
+  position: absolute;
+  bottom: 10%;
+  display: block;
+  text-align: center;
+  justify-content: center;
+  padding: 14px;
+}
+.testimony {
+  height: 180px;
+  text-align: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+  padding-top: 50px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+.emily {
+  height: 420px;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+}
+#emily-body {
+  position: absolute;
+  bottom: 18px;
+}
+#emily-img {
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 50%;
+}
+#emily-img.desktop,
+#thomas-img.desktop,
+#jennie-img.desktop {
+  display: none;
+}
+.thomas {
+  height: 420px;
+  position: relative;
+  padding: 10px;
+  text-align: center;
+  justify-content: center;
+}
+#thomas-body {
+  position: absolute;
+  bottom: 18px;
+}
+#thomas-img {
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  display: block;
+}
+.jennie {
+  height: 420px;
+  position: relative;
+  padding: 10px;
+  text-align: center;
+  justify-content: center;
+}
+#jennie-body {
+  position: absolute;
+  bottom: 18px;
+}
+#jennie-img {
+  border-radius: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  width: 50%;
+  display: block;
+}
+.img-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  line-height: 0%;
+  width: 100%;
+}
+.bottle {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.orange {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.cone {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.sugar {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+footer {
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  background-color: hsl(168, 62%, 41%);
+}
+.footer__logo {
+  justify-items: center;
+  text-align: center;
+  color: hsl(167, 40%, 24%);
+}
+.footer__menu {
+  list-style: none;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  padding: 20px;
+}
+.footer__item {
+  padding: 20px;
+  text-decoration: none;
+}
+a.footer__link {
+  display: flex;
+  color: hsl(167, 40%, 24%);
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+a.footer__link:hover {
+  color: #fff;
+}
+#footer__icons {
+  display: inline-flex;
+  padding: 0px 3px;
+  margin: 4px;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 50%;
+  margin: 0px 20px;
+}
+
+i a img {
+  display: flex;
+  justify-content: space-evenly;
+}
+i a {
+  display: flex;
+}
+a#facebook-icon:hover,
+a#instagram-icon:hover,
+a#pinterest-icon:hover,
+a#twitter-icon:hover {
+  background-color: #fff;
+}
+@media (min-width: 375px) {
+  #motto {
+    left: 24%;
+    font-size: 64px;
+  }
+  .cre {
+    left: 8%;
+    font-size: 64px;
+  }
+  .desktop {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .wrapper {
+    overflow-x: hidden;
+  }
+  .mobile {
+    display: none;
+    border: 2px solid goldenrod;
+  }
+  .header {
+    background-image: url(../desktop/image-header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .navbar {
+    height: 75px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  #navbar__logo {
+    font-size: 18px;
+    font-weight: 900;
+    display: inline;
+  }
+  .desktop {
+    display: flex;
+    align-items: end;
+    text-align: center;
+  }
+  .dropdown {
+    display: none;
+  }
+  button {
+    border-radius: 50px;
+    width: 110px;
+    margin: 5px 0px;
+    border: none;
+  }
+  #motto {
+    left: 31%;
+    font-size: 35px;
+  }
+  .cre {
+    top: 20%;
+    left: 48%;
+    font-size: 35px;
+  }
+  #arrow {
+    top: 185px;
+    left: 47%;
+  }
+  .desktop__motto {
+    position: absolute;
+
+    height: auto;
+    color: #fff;
+
+    letter-spacing: 0.2rem;
+  }
+  .navbar__menu {
+    display: flex;
+  }
+  .navbar__item {
+    display: flex;
+    list-style: none;
+    margin-right: 10px;
+    align-content: center;
+    font-size: 8px;
+    justify-items: center;
+  }
+
+  .navbar__link {
+    font-size: 8px;
+    font-weight: 100;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 8px;
+  }
+  .btn {
+    display: block;
+    color: black;
+    text-decoration: none;
+    border-radius: 30px;
+    text-decoration: none;
+    list-style: none;
+    font-size: 8px;
+    font-weight: 900;
+    border: none;
+    text-transform: uppercase;
+  }
+  button:hover {
+    background-color: bhsl(213, 9%, 39%);
+    color: #fff;
+    cursor: pointer;
+  }
+  .major-sect {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .transform-sect {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .transform-body {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .transform-img {
+    grid-column: 2/3;
+    line-height: 0%;
+  }
+  .transform-text h4:hover {
+    border-bottom: hsl(7, 99%, 70%);
+    width: 20px;
+  }
+  .stand-out {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .stand-out-body {
+    grid-column: 2/3;
+    position: relative;
+    max-width: 720px;
+  }
+  .stand-out-img {
+    grid-column: 1/2;
+    max-width: 720px;
+    line-height: 0%;
+  }
+
+  .stand-out-text {
+    position: absolute;
+    top: 20%;
+    left: 100px;
+    width: 350px;
+  }
+  .graphic-design {
+    display: flex;
+  }
+  .graphic-img {
+    grid-column: 1/2;
+    position: relative;
+  }
+  .photography-img {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    position: relative;
+  }
+  .graphic-text {
+    position: absolute;
+    top: 55%;
+    text-align: center;
+  }
+  .photography-text {
+    position: absolute;
+    top: 50%;
+    text-align: center;
+  }
+  .testimony {
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 10px;
+    margin-top: 80px;
+    font-weight: 800;
+    font-size: 18px;
+  }
+  .client {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 0px 70px;
+  }
+  #emily-body {
+    width: 100%;
+    bottom: 30%;
+  }
+  #thomas-body {
+    width: 100%;
+    bottom: 25%;
+  }
+  #jennie-body {
+    width: 100%;
+    bottom: 30%;
+  }
+  #emily-img.desktop {
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    display: block;
+  }
+  #thomas-img.desktop {
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    display: block;
+  }
+  #jennie-img.desktop {
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    display: block;
+  }
+  #emily-img.mobile,
+  #thomas-img.mobile,
+  #jennie-img.mobile {
+    display: none;
+  }
+  @media (min-width: 1024px) {
+    #motto {
+      left: 35%;
+      size: 28px;
+    }
+    .text {
+      top: 40%;
+    }
+  }
+  @media (min-width: 1440px) {
+    #motto {
+      left: 39%;
+      size: 28px;
+    }
+    .text {
+      top: 60%;
+    }
+    .client {
+      padding: 0px 180px;
+    }
+  }
+}
